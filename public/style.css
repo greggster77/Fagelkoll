@@ -8,3 +8,112 @@ nav{overflow-x:auto}nav button{white-space:nowrap}#watchlist,#watchhits{margin-t
 .profilestats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:20px 0}.profilestats div{padding:12px 8px;background:#eaf2f6;border-radius:12px;text-align:center}.profilestats strong{display:block;font-size:1.6rem}.profilestats span{display:block;font-size:.875rem;overflow-wrap:anywhere}.profilecard form{display:grid;gap:12px}.profilecard h2{overflow-wrap:anywhere}
 header #openprofile{margin:0;min-height:44px;flex-shrink:0;padding:8px 12px}header{gap:10px}#konto{scroll-margin-top:16px}
 .heatlegend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.875rem;margin:12px 0}.heatlegend span{display:flex;align-items:center;gap:6px}.heatlegend i{width:14px;height:14px;border-radius:50%;display:inline-block;flex-shrink:0}.heatsection{margin:20px 0}.ageheatcanvas{position:absolute;inset:0;pointer-events:none;z-index:350}#speciesheatmap{height:340px;position:relative}
+:root{color-scheme:light;--ink:#19392f;--muted:#60776d;--line:#dce7df;--gold:#e5c968;--blue:#287a60}
+body{background:#f5f7f2;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+header{min-height:76px;background:#173d32;box-shadow:0 4px 18px #173d3214}
+.brand{display:inline-flex;align-items:center;gap:10px;font-size:21px;letter-spacing:-.4px}
+.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:#e5c968;color:#173d32;font-size:26px;line-height:1}
+header #openprofile{border-color:#ffffff42;background:#ffffff12;color:white;border-radius:999px;padding:8px 16px}
+header #openprofile:hover{background:#ffffff24}
+main{max-width:1120px;padding:26px 24px 40px}
+.notice{border:1px solid #eadca9;border-left:4px solid #cba94b;border-radius:12px;background:#fff9e8;color:#65552c;padding:12px 16px}
+.intro{position:relative;isolation:isolate;overflow:hidden;margin:22px 0 24px;padding:clamp(28px,5vw,52px);border:1px solid #174b3a;border-radius:26px;background:linear-gradient(115deg,#183f32 0%,#24614a 58%,#397354 100%);color:white;box-shadow:0 18px 38px #19392f1a}
+.intro::after{position:absolute;z-index:-1;top:-145px;right:-54px;width:390px;height:390px;border:1px solid #ffffff20;border-radius:50%;background:radial-gradient(circle at 44% 48%,#e5c96824 0 18%,transparent 18.5%),radial-gradient(circle at 58% 58%,#ffffff0d 0 42%,transparent 42.5%);content:""}
+.intro .eyebrow{margin:0 0 10px;color:#edda8e;font-size:12px;letter-spacing:2px}
+.intro h1{max-width:680px;margin:0;font-size:clamp(36px,6vw,58px);line-height:1.06;letter-spacing:-2.5px}
+.intro #lead{max-width:590px;margin:16px 0 0;color:#e0eee4;font-size:17px}
+nav{position:relative;gap:4px;overflow-x:auto;margin:0 0 25px;padding:6px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 5px 16px #19392f08;scrollbar-width:thin}
+nav button{flex:1 0 auto;min-height:46px;padding:10px 16px;border:0;border-radius:11px;color:#526c60;transition:background .18s ease,color .18s ease}
+nav button:hover{background:#f2f6f1;color:var(--ink)}
+nav .active{border:0;background:#e8f1e9;color:#1d6148}
+nav span{margin-left:4px;background:#dcebdc;color:#275d47}
+h1,h2,h3{color:var(--ink)}
+h2{font-size:24px;letter-spacing:-.55px}
+.controls{gap:14px;padding:20px;border-color:var(--line);border-radius:18px;background:#fff;box-shadow:0 8px 24px #19392f08}
+label{gap:7px;color:#3b594c;font-size:13px;font-weight:650}
+input,select,textarea{min-height:48px;border-color:#cfddd2;border-radius:11px;background:#fff;color:var(--ink);transition:border-color .18s ease,box-shadow .18s ease}
+input::placeholder,textarea::placeholder{color:#93a49a}
+input:focus,select:focus,textarea:focus{border-color:#398668;outline:0;box-shadow:0 0 0 4px #39866820}
+button{min-height:44px;border-radius:11px;transition:transform .16s ease,background .16s ease,border-color .16s ease,box-shadow .16s ease}
+button:hover{transform:translateY(-1px)}
+button:active{transform:translateY(0)}
+button:focus-visible,a:focus-visible{outline:3px solid #d5b646;outline-offset:3px}
+.primary{background:#236448;color:#fff;box-shadow:0 5px 12px #23644820}
+.primary:hover{background:#194f39;box-shadow:0 8px 17px #23644830}
+.secondary{border-color:#cfddd2;background:#fff;color:#315b49}
+.secondary:hover{border-color:#8eae99;background:#f5f8f3}
+.sectiontitle{margin-top:30px}
+.sectiontitle h2{margin-bottom:10px}
+.sectiontitle span{border:1px solid #dce8df;border-radius:999px;background:#edf4ee;padding:6px 10px;color:#407258;font-size:11px;font-weight:750;letter-spacing:1.2px}
+.datarow{gap:12px;margin:14px 0}
+.meta{color:var(--muted);line-height:1.6}
+.cards{gap:18px;margin-top:12px}
+.card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:20px;padding:22px;background:#fff;box-shadow:0 8px 24px #19392f0b;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #19392f12}
+.card .rank{color:#397758;font-size:11px;letter-spacing:1px}
+.card h3{margin:15px 0 8px;font-size:25px;letter-spacing:-.7px}
+.new{color:#1e6448;font-size:42px}
+.new small{color:var(--muted);font-size:14px}
+.birds span{border:1px solid #e0ebe0;background:#eef5ed;color:#365b46}
+.empty{border:1px dashed #c9d9cc;border-radius:16px;background:#fbfcf9;color:#64786b;padding:34px 22px}
+.searchrow{gap:12px;margin-bottom:12px}
+.speciesfilters{margin:16px 0}
+.speciesrow{gap:14px;padding:13px 15px;border-bottom:1px solid #e5ece5;transition:background .15s ease}
+.speciesrow:hover{border-radius:10px;background:#edf4ed}
+.speciesrow label{color:var(--ink);font-size:16px}
+.speciesrow small{margin-top:2px;color:#778a7e}
+.speciesrow input,.inline input{accent-color:#287a60}
+.speciesrow button{color:#287a60}
+.record{border-color:var(--line);border-radius:16px;padding:21px;background:#fff;box-shadow:0 6px 20px #19392f08}
+.record h2,.record h3{letter-spacing:-.4px}
+.profilestats div{border:1px solid #e1ebe0;border-radius:14px;background:#f0f5ee}
+.profilestats strong{color:#256448;font-size:1.8rem;letter-spacing:-1px}
+#locationpicker,#installhelp{border-color:var(--line);border-radius:16px;background:#fff;box-shadow:0 5px 18px #19392f08}
+#locationpicker{padding:20px}
+#installhelp{padding:16px 20px}
+summary{color:#345c48}
+dialog{border:1px solid #e1e9e1;border-radius:22px;padding:26px;background:#fbfcf9}
+dialog::backdrop{background:#112a208c;backdrop-filter:blur(3px)}
+.dialoghead{margin-bottom:14px}
+.dialoghead h2{font-size:25px}
+.observation{padding:17px 0;border-bottom-color:#e4ece4}
+.observation strong{font-size:18px}
+.observation a{background:#edf4ed;color:#286347;text-decoration:none}
+.observation a:hover{background:#e2eee2}
+.observation button{color:#315b49}
+.placemap,.interactive-map{border-color:var(--line);border-radius:14px}
+footer{margin-top:42px;color:#829187;line-height:1.8}
+#toast{bottom:22px;border:1px solid #ffffff20;border-radius:14px;background:#173d32;padding:13px 20px;box-shadow:0 12px 34px #102b3840}
+@media(max-width:750px){
+  header{min-height:66px;padding:12px 16px}
+  .brand{gap:8px;font-size:19px}
+  .mark{width:34px;height:34px;border-radius:11px}
+  header #openprofile{min-height:42px;padding:7px 12px;font-size:14px}
+  main{padding:18px 16px 30px}
+  .intro{margin:16px 0 18px;padding:30px 24px;border-radius:21px}
+  .intro::after{top:-125px;right:-190px;width:330px;height:330px}
+  .intro h1{letter-spacing:-1.6px}
+  .intro #lead{font-size:16px}
+  nav{margin-bottom:20px;border-radius:14px}
+  nav button{min-height:44px;padding:9px 13px}
+  .controls{gap:11px;padding:15px;border-radius:15px}
+  .cards{gap:13px}
+  .card{border-radius:17px;padding:19px}
+  .searchrow{align-items:stretch}
+  .speciesrow{gap:10px;padding:12px 9px}
+  .speciesrow button{padding:8px 10px}
+  .record{padding:17px}
+}
+@media(max-width:480px){
+  .notice{font-size:13px}
+  .controls{grid-template-columns:1fr}
+  .sectiontitle{align-items:flex-start;gap:8px}
+  .sectiontitle h2{font-size:22px}
+  .profilestats{gap:6px}
+  .profilestats div{padding:10px 5px}
+  .profilestats span{font-size:12px}
+  dialog{padding:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
