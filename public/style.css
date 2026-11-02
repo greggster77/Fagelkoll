@@ -117,3 +117,90 @@ footer{margin-top:42px;color:#829187;line-height:1.8}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+body{background:#f1f0e9;color:#20392f;font-family:Georgia,"Times New Roman",serif}
+main>.notice,.controls,.cards,.searchrow,.speciesfilters,.speciesrow,.record,.meta,.datarow,#installhelp,dialog,label,input,select,textarea{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:500;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:24px;min-height:88px;padding:12px max(24px,calc((100vw - 1420px)/2));border-bottom:1px solid #e3e1d7;background:#f7f6f0;color:#20392f;box-shadow:0 6px 22px #17281d0a}
+.brand{gap:12px;color:#1b332a;font-family:Georgia,"Times New Roman",serif;font-size:23px;font-weight:700;letter-spacing:-.7px}
+.brand::after{content:"SVERIGES FÅGLAR";display:block;margin-left:-7px;color:#728178;font-family:system-ui,sans-serif;font-size:10px;font-weight:600;letter-spacing:2.5px}
+.mark{display:grid;width:60px;height:60px;place-items:center;border:1px solid #214133;border-radius:20px;background:#1d3b30;color:#e3b948;font-size:32px}
+header #openprofile{min-height:48px;padding:9px 16px;border:1px solid #e7e4da;border-radius:999px;background:#fff;color:#294536;font-family:system-ui,sans-serif}
+header #openprofile:hover{background:#f0f3eb}
+main{max-width:1468px;padding:24px 24px 48px}
+main>.notice{margin:18px 0;border:1px solid #e8dfc7;border-left:3px solid #d5ab45;border-radius:11px;background:#fffaf0;color:#63583d}
+.site-nav{display:flex;justify-content:center;gap:7px;min-width:0;margin:0;padding:0;overflow-x:auto;border:0;background:transparent;box-shadow:none;scrollbar-width:thin}
+.site-nav button{flex:0 0 auto;min-height:48px;padding:10px 19px;border:0;border-radius:999px;color:#68776e;font-family:system-ui,sans-serif;font-size:15px;font-weight:600}
+.site-nav button:hover{background:#eceee6;color:#20392f}
+.site-nav .active{background:#e5e6dd;color:#20392f}
+.site-nav span{background:#e4e6dc;color:#315d47}
+.intro{position:relative;display:flex;min-height:610px;flex-direction:column;justify-content:flex-end;isolation:isolate;overflow:hidden;margin:0;padding:clamp(34px,5vw,64px) clamp(24px,4vw,48px) 30px;border:1px solid #17282a;border-radius:2px;background-color:#0b1418;background-image:linear-gradient(180deg,#07111500 0%,#09131620 22%,#091316cb 48%,#091316 73%,#091316 100%),url("/forest-dawn.svg");background-position:center,center 34%;background-repeat:no-repeat;background-size:100% 100%,cover;color:#e9ede4;box-shadow:0 18px 50px #10231b18}
+.intro::after{position:absolute;z-index:-1;top:0;right:0;bottom:0;left:0;width:auto;height:auto;border:0;border-radius:0;background:linear-gradient(90deg,#09131640,transparent 85%);content:""}
+.intro .eyebrow{margin:0 0 15px;color:#e5b443;font-family:system-ui,sans-serif;font-size:13px;font-weight:750;letter-spacing:4px}
+.intro h1{max-width:900px;margin:0;color:#edf0e8;font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,6.6vw,76px);font-weight:700;line-height:1.04;letter-spacing:-2.3px;text-transform:uppercase}
+.intro h1 span{color:#e4b343}
+.intro #lead{max-width:900px;margin:20px 0 26px;color:#b9d1cf;font-family:system-ui,sans-serif;font-size:clamp(15px,1.55vw,19px);line-height:1.7}
+.hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #a9c1ba33;font-family:system-ui,sans-serif}
+.hero-stats>div{display:flex;min-height:90px;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px 15px 0;border-bottom:1px solid #a9c1ba33}
+.hero-stats>div+div{padding-left:22px;border-left:1px solid #a9c1ba25}
+.hero-stats strong{color:#e8eee7;font-size:clamp(27px,3vw,40px);font-weight:500;letter-spacing:-1.6px}
+.hero-stats span{max-width:150px;color:#91aaa2;font-size:10px;font-weight:700;letter-spacing:2px;text-align:right}
+.intro+#datastatus{margin-top:16px}
+.sectiontitle{margin-top:30px}
+.sectiontitle h2,h2,h3{font-family:Georgia,"Times New Roman",serif}
+.controls,.card,.record,#locationpicker,#installhelp{border-color:#e0e2d8;border-radius:16px;background:#fbfaf5;box-shadow:0 8px 26px #162c1b09}
+.controls{padding:21px}
+label{color:#3e5849}
+input,select,textarea{border-color:#d8dbd0;border-radius:9px;background:#fffefa;color:#243b30}
+input:focus,select:focus,textarea:focus{border-color:#b29442;box-shadow:0 0 0 4px #b294421a}
+button{font-family:system-ui,sans-serif}
+.primary{background:#254b38;box-shadow:0 5px 13px #254b3820}
+.primary:hover{background:#173a2b}
+.secondary{border-color:#d5d9cd;background:#fffefa;color:#31513d}
+.secondary:hover{border-color:#b3bcae;background:#f4f3eb}
+.card{border-radius:14px}
+.card:hover{box-shadow:0 14px 30px #19392f12}
+.rank,.card .rank{color:#8b6a1e}
+.new{color:#345e44}
+.birds span{border-color:#e5e4d7;background:#edeee5;color:#465c43}
+.empty{border-color:#d2d7ca;background:#faf9f3;color:#69756b}
+.speciesrow{border-bottom-color:#e6e5dc}
+.speciesrow:hover{background:#eeefe7}
+.speciesrow input,.inline input{accent-color:#395f42}
+.speciesrow button,.link,.observation a{color:#466749}
+.record{border-radius:14px}
+.profilestats div{border-color:#e4e4d9;background:#efefe6}
+.profilestats strong{color:#345e44}
+dialog{border-color:#e0e2d8;border-radius:18px;background:#faf9f3}
+dialog::backdrop{background:#101b17b3;backdrop-filter:blur(3px)}
+.notice{border-radius:10px}
+.observation a{background:#ecefe6}
+.observation a:hover{background:#e3e9dc}
+footer{color:#7b877c}
+#toast{background:#1d3b30}
+@media(max-width:900px){
+  header{grid-template-columns:auto 1fr auto;gap:10px;min-height:76px;padding:9px 16px}
+  .brand{gap:9px;font-size:20px}
+  .brand::after{font-size:8px;letter-spacing:2px}
+  .mark{width:48px;height:48px;border-radius:16px;font-size:27px}
+  .site-nav{grid-column:1/-1;grid-row:2;justify-content:flex-start;padding:6px 0 0;border-top:1px solid #e7e5dc}
+  .site-nav button{min-height:43px;padding:8px 15px;font-size:14px}
+  main{padding:18px 16px 36px}
+  .intro{min-height:550px;background-position:center,center 30%}
+}
+@media(max-width:600px){
+  header{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+  .brand{font-size:19px}
+  .brand::after{margin-left:-5px;font-size:7px;letter-spacing:1.6px}
+  .mark{width:43px;height:43px;border-radius:14px}
+  header #openprofile{min-height:42px;padding:7px 12px;font-size:13px}
+  .site-nav{grid-column:1/-1;grid-row:2}
+  .intro{min-height:545px;padding:29px 22px 22px;background-position:center,center 22%}
+  .intro h1{font-size:clamp(38px,11vw,57px);letter-spacing:-1.5px}
+  .intro .eyebrow{font-size:11px;letter-spacing:2.6px}
+  .intro #lead{margin:15px 0 20px;font-size:15px}
+  .hero-stats{grid-template-columns:1fr}
+  .hero-stats>div{min-height:58px;padding:8px 0;border-bottom:1px solid #a9c1ba33}
+  .hero-stats>div+div{padding-left:0;border-left:0}
+  .hero-stats strong{font-size:28px}
+  .hero-stats span{max-width:none}
+  .controls{grid-template-columns:1fr}
+}

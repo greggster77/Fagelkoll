@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 780" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#81918a"/>
+      <stop offset=".34" stop-color="#344b49"/>
+      <stop offset=".67" stop-color="#142423"/>
+      <stop offset="1" stop-color="#0b1518"/>
+    </linearGradient>
+    <linearGradient id="water" x1="800" y1="390" x2="800" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#405553"/>
+      <stop offset="1" stop-color="#101c1e"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="380" x2="1600" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ced3c2" stop-opacity="0"/>
+      <stop offset=".48" stop-color="#d5dac9" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#ced3c2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v780H0z"/>
+  <path fill="#182d2b" d="m0 252 34-66 32 66 26-91 35 91 39-129 43 129 32-76 35 76 41-144 42 144 32-91 35 91 48-168 44 168 39-115 40 115 38-79 43 79 42-133 41 133 43-94 38 94 49-157 44 157 39-104 37 104 45-136 43 136 44-86 41 86 43-115 42 115 46-160 45 160 42-119 45 119 42-91 43 91 45-134 45 134 40-94 42 94 48-151 45 151 42-111 43 111 47-141 44 141 41-101 44 101 48-130 43 130 44-93 44 93 47-142 48 142 44-104 47 104 42-121 46 121 44-87 48 87 43-139 48 139 43-103 52 103V420H0z"/>
+  <path fill="#314642" fill-opacity=".72" d="m0 310 37-77 38 77 37-61 36 61 46-109 48 109 40-70 39 70 42-93 43 93 43-63 39 63 47-111 45 111 38-65 41 65 47-89 45 89 41-60 41 60 49-104 49 104 41-66 42 66 48-94 45 94 45-70 42 70 48-103 45 103 43-66 44 66 48-89 46 89 41-67 43 67 49-104 48 104 45-72 45 72 46-97 48 97 43-69 45 69 47-100 47 100 44-66 46 66 47-90 49 90 43-67 45 67 46-94 50 94V443H0z"/>
+  <path fill="url(#mist)" d="M0 319h1600v127H0z"/>
+  <path fill="url(#water)" d="M0 405h1600v375H0z"/>
+  <path stroke="#b9c3b4" stroke-opacity=".16" d="M0 426c260 13 450 8 704 1 314-8 583-10 896 2"/>
+  <path stroke="#9eaa9f" stroke-opacity=".13" d="M0 468c278 8 540 6 810 0 282-6 524-7 790 1"/>
+  <path fill="#091316" fill-opacity=".56" d="M0 0h1600v780H0z"/>
+</svg>

@@ -4,3 +4,4 @@ $('profileform').addEventListener('submit',event=>{event.preventDefault();const 
 renderProfile();
 
 $('openprofile').addEventListener('click',()=>{document.querySelector('nav button[data-tab="konto"]').click();$('konto').scrollIntoView({block:'start'});$('profilename').focus({preventScroll:true})});
+import("/design.js").catch(error => console.error("Could not load the app design.", error));
